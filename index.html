@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="src/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar bg-body-tertiary">
+            <div class="icon-insta ms-5">
+                <i class="fa-brands fa-instagram"></i>
+                Instagram
+            </div>
+              <div class="d-flex dropdown me-5">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Crear post
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Crear un nuevo post</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Caption</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    <div class="mt-3">
+                                        <button type="button" class="btn btn-light"><i class="fa-solid fa-camera"></i></button>
+                                        <button type="button" class="btn btn-light"><i class="fa-solid fa-location-pin"></i></button>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Publish</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div>
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end  ">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibilty</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                        <li><a class="dropdown-item border-top text-danger" href="#">Logout</a></li>
+                      </ul>
+                </div>
+            </div>
+            </div>
+          </nav>
+    </div>
+
+        <nav class="nav nav-pills d-flex justify-content-center m-5" id="pills-tab" role="tablist">
+            <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></a>
+            <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-square"></i></a>
+        </nav>
+        <div class="tab-content ms-5" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="card-group">
+                        <div class="card m-3">
+                            <img src="https://images.unsplash.com/photo-1720048171209-71f6fc3d7ea4?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top tamaño " alt="card-group-image">
+                        </div>
+                        <div class="card m-3">
+                            <img src="https://plus.unsplash.com/premium_photo-1670426502067-99395cc491c2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top tamaño" alt="card-group-image">
+                        </div>
+                        <div class="card m-3">
+                            <img src="https://images.unsplash.com/photo-1723843038794-97663cc894ba?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top tamaño" alt="card-group-image">
+                        </div>
+                    </div>
+                <div class="card-group">
+                        <div class="card m-3">
+                            <img src="https://images.unsplash.com/photo-1724458113899-4f4a3e412878?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top tamaño" alt="card-group-image">
+                        </div>
+                        <div class="card m-3">
+                            <img src="https://plus.unsplash.com/premium_photo-1666184127594-5161d3125d84?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top tamaño" alt="card-group-image">
+                        </div>
+                        <div class="card m-3">
+                            <img src="https://images.unsplash.com/photo-1723754165998-305df32c501e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top tamaño" alt="card-group-image">
+                        </div>
+                    </div>
+                <div class="card-group mb-3">
+                        <div class="card m-3">
+                            <img src="https://images.unsplash.com/photo-1723126004556-4ecfcbab3908?q=80&w=1986&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top tamaño" alt="card-group-image">
+                        </div>
+                        <div class="card m-3">
+                            <img src="https://images.unsplash.com/photo-1723053145751-9aacd7c47df1?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top tamaño" alt="card-group-image">
+                        </div>
+                        <div class="card m-3">
+                            <img src="https://images.unsplash.com/photo-1719937206642-ca0cd57198cc?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top tamaño" alt="card-group-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+                <div class="row mb-5">
+
+                <div class="d-flex justify-content-center col">
+
+                    <div class="card border rounded-3 p-0 m-0" style="width: 40rem;">
+                        <div class="card-header bg-transparent d-flex justify-content-between bd-highlight p-0 m-0">
+                            <div class="text-sm-start fs-5 p-0 m-2 bd-highlight fw-normal">
+                                Samsung card
+                            </div>
+                            <div class="text-sm-end fs-6 p-0 m-0 bd-highlight fw-light">
+                                08/26
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <img src="https://images.unsplash.com/photo-1720048171209-71f6fc3d7ea4?q=80&w=400&h=200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top tamaño-feed rounded-0">
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <div class="d-flex icons-feed">
+                                <i class="fa-regular fa-heart icon p-1"></i>
+                                <i class="fa-regular fa-comment icon p-1"></i>
+                                <i class="fa-regular fa-paper-plane icon p-1"></i>
+                            </div>
+                            <div class="text-wrap fw-normal">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorem delectus et doloremque nihil eius ex voluptas ad minima fugit enim optio ipsum veritatis ab animi, natus quis saepe corporis.
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+
+                    <div class="d-flex justify-content-center col">
+    
+                        <div class="card border rounded-3 p-0 m-0" style="width: 40rem;">
+                            <div class="card-header bg-transparent d-flex justify-content-between bd-highlight p-0 m-0">
+                                <div class="text-sm-start fs-5 p-0 m-2 bd-highlight fw-normal">
+                                    Confeti
+                                </div>
+                                <div class="text-sm-end fs-6 p-0 m-0 bd-highlight fw-light">
+                                    08/26
+                                </div>
+                            </div>
+                            <div class="card-body p-0">
+                                <img src="https://plus.unsplash.com/premium_photo-1670426502067-99395cc491c2?q=80&w=400&h=200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top tamaño-feed rounded-0">
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <div class="d-flex icons-feed">
+                                    <i class="fa-regular fa-heart icon p-1"></i>
+                                    <i class="fa-regular fa-comment icon p-1"></i>
+                                    <i class="fa-regular fa-paper-plane icon p-1"></i>
+                                </div>
+                                <div class="text-wrap fw-normal">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorem delectus et doloremque nihil eius ex voluptas ad minima fugit enim optio ipsum veritatis ab animi, natus quis saepe corporis.
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+                
+                <div class="row mb-5">
+
+                    <div class="d-flex justify-content-center col">
+    
+                        <div class="card border rounded-3 p-0 m-0" style="width: 40rem;">
+                            <div class="card-header bg-transparent d-flex justify-content-between bd-highlight p-0 m-0">
+                                <div class="text-sm-start fs-5 p-0 m-2 bd-highlight fw-normal">
+                                    Photo Beach
+                                </div>
+                                <div class="text-sm-end fs-6 p-0 m-0 bd-highlight fw-light">
+                                    08/26
+                                </div>
+                            </div>
+                            <div class="card-body p-0">
+                                <img src="https://images.unsplash.com/photo-1723843038794-97663cc894ba?q=80&w=400&h=200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top tamaño-feed rounded-0">
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <div class="d-flex icons-feed">
+                                    <i class="fa-regular fa-heart icon p-1"></i>
+                                    <i class="fa-regular fa-comment icon p-1"></i>
+                                    <i class="fa-regular fa-paper-plane icon p-1"></i>
+                                </div>
+                                <div class="text-wrap fw-normal">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorem delectus et doloremque nihil eius ex voluptas ad minima fugit enim optio ipsum veritatis ab animi, natus quis saepe corporis.
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+
+                <div class="row mb-5">
+
+                    <div class="d-flex justify-content-center col">
+    
+                        <div class="card border rounded-3 p-0 m-0" style="width: 40rem;">
+                            <div class="card-header bg-transparent d-flex justify-content-between bd-highlight p-0 m-0">
+                                <div class="text-sm-start fs-5 p-0 m-2 bd-highlight fw-normal">
+                                    Retrait
+                                </div>
+                                <div class="text-sm-end fs-6 p-0 m-0 bd-highlight fw-light">
+                                    09/26
+                                </div>
+                            </div>
+                            <div class="card-body p-0">
+                                <img src="https://images.unsplash.com/photo-1724458113899-4f4a3e412878?q=80&w=400&h=200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top tamaño-feed rounded-0">
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <div class="d-flex icons-feed">
+                                    <i class="fa-regular fa-heart icon p-1"></i>
+                                    <i class="fa-regular fa-comment icon p-1"></i>
+                                    <i class="fa-regular fa-paper-plane icon p-1"></i>
+                                </div>
+                                <div class="text-wrap fw-normal">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorem delectus et doloremque nihil eius ex voluptas ad minima fugit enim optio ipsum veritatis ab animi, natus quis saepe corporis.
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+
+                <div class="row mb-5">
+
+                    <div class="d-flex justify-content-center col">
+    
+                        <div class="card border rounded-3 p-0 m-0" style="width: 40rem;">
+                            <div class="card-header bg-transparent d-flex justify-content-between bd-highlight p-0 m-0">
+                                <div class="text-sm-start fs-5 p-0 m-2 bd-highlight fw-normal">
+                                    Skate Day
+                                </div>
+                                <div class="text-sm-end fs-6 p-0 m-0 bd-highlight fw-light">
+                                    01/26
+                                </div>
+                            </div>
+                            <div class="card-body p-0">
+                                <img src="https://plus.unsplash.com/premium_photo-1666184127594-5161d3125d84?q=80&w=400&h=200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top tamaño-feed rounded-0">
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <div class="d-flex icons-feed">
+                                    <i class="fa-regular fa-heart icon p-1"></i>
+                                    <i class="fa-regular fa-comment icon p-1"></i>
+                                    <i class="fa-regular fa-paper-plane icon p-1"></i>
+                                </div>
+                                <div class="text-wrap fw-normal">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorem delectus et doloremque nihil eius ex voluptas ad minima fugit enim optio ipsum veritatis ab animi, natus quis saepe corporis.
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+
+                <div class="row mb-5">
+
+                    <div class="d-flex justify-content-center col">
+    
+                        <div class="card border rounded-3 p-0 m-0" style="width: 40rem;">
+                            <div class="card-header bg-transparent d-flex justify-content-between bd-highlight p-0 m-0">
+                                <div class="text-sm-start fs-5 p-0 m-2 bd-highlight fw-normal">
+                                    Relax
+                                </div>
+                                <div class="text-sm-end fs-6 p-0 m-0 bd-highlight fw-light">
+                                    01/26
+                                </div>
+                            </div>
+                            <div class="card-body p-0">
+                                <img src="https://images.unsplash.com/photo-1723754165998-305df32c501e?q=80&w=400&h=200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top tamaño-feed rounded-0">
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <div class="d-flex icons-feed">
+                                    <i class="fa-regular fa-heart icon p-1"></i>
+                                    <i class="fa-regular fa-comment icon p-1"></i>
+                                    <i class="fa-regular fa-paper-plane icon p-1"></i>
+                                </div>
+                                <div class="text-wrap fw-normal">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorem delectus et doloremque nihil eius ex voluptas ad minima fugit enim optio ipsum veritatis ab animi, natus quis saepe corporis.
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+
+                <div class="row mb-5">
+
+                    <div class="d-flex justify-content-center col">
+    
+                        <div class="card border rounded-3 p-0 m-0" style="width: 40rem;">
+                            <div class="card-header bg-transparent d-flex justify-content-between bd-highlight p-0 m-0">
+                                <div class="text-sm-start fs-5 p-0 m-2 bd-highlight fw-normal">
+                                    Normal day
+                                </div>
+                                <div class="text-sm-end fs-6 p-0 m-0 bd-highlight fw-light">
+                                    05/26
+                                </div>
+                            </div>
+                            <div class="card-body p-0">
+                                <img src="https://images.unsplash.com/photo-1723126004556-4ecfcbab3908?q=80&w=400&h=200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top tamaño-feed rounded-0">
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <div class="d-flex icons-feed">
+                                    <i class="fa-regular fa-heart icon p-1"></i>
+                                    <i class="fa-regular fa-comment icon p-1"></i>
+                                    <i class="fa-regular fa-paper-plane icon p-1"></i>
+                                </div>
+                                <div class="text-wrap fw-normal">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorem delectus et doloremque nihil eius ex voluptas ad minima fugit enim optio ipsum veritatis ab animi, natus quis saepe corporis.
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+
+                <div class="row mb-5">
+
+                    <div class="d-flex justify-content-center col">
+    
+                        <div class="card border rounded-3 p-0 m-0" style="width: 40rem;">
+                            <div class="card-header bg-transparent d-flex justify-content-between bd-highlight p-0 m-0">
+                                <div class="text-sm-start fs-5 p-0 m-2 bd-highlight fw-normal">
+                                    Photo Shot #1
+                                </div>
+                                <div class="text-sm-end fs-6 p-0 m-0 bd-highlight fw-light">
+                                    06/26
+                                </div>
+                            </div>
+                            <div class="card-body p-0">
+                                <img src="https://images.unsplash.com/photo-1723053145751-9aacd7c47df1?q=80&w=400&h=200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top tamaño-feed rounded-0">
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <div class="d-flex icons-feed">
+                                    <i class="fa-regular fa-heart icon p-1"></i>
+                                    <i class="fa-regular fa-comment icon p-1"></i>
+                                    <i class="fa-regular fa-paper-plane icon p-1"></i>
+                                </div>
+                                <div class="text-wrap fw-normal">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorem delectus et doloremque nihil eius ex voluptas ad minima fugit enim optio ipsum veritatis ab animi, natus quis saepe corporis.
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+
+                <div class="row mb-5">
+
+                    <div class="d-flex justify-content-center col">
+    
+                        <div class="card border rounded-3 p-0 m-0" style="width: 40rem;">
+                            <div class="card-header bg-transparent d-flex justify-content-between bd-highlight p-0 m-0">
+                                <div class="text-sm-start fs-5 p-0 m-2 bd-highlight fw-normal">
+                                    Photo Shot day
+                                </div>
+                                <div class="text-sm-end fs-6 p-0 m-0 bd-highlight fw-light">
+                                    08/26
+                                </div>
+                            </div>
+                            <div class="card-body p-0">
+                                <img src="https://images.unsplash.com/photo-1719937206642-ca0cd57198cc?q=80&w=400&h=200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top tamaño-feed rounded-0">
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <div class="d-flex icons-feed">
+                                    <i class="fa-regular fa-heart icon p-1"></i>
+                                    <i class="fa-regular fa-comment icon p-1"></i>
+                                    <i class="fa-regular fa-paper-plane icon p-1"></i>
+                                </div>
+                                <div class="text-wrap fw-normal">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorem delectus et doloremque nihil eius ex voluptas ad minima fugit enim optio ipsum veritatis ab animi, natus quis saepe corporis.
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+    </div>    
+</body>
+
+</html>
